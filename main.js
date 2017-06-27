@@ -14,7 +14,7 @@ yell("hello");
 function yell10(string) {
   console.log(string.toUpperCase().repeat(10));
 }
-yell10("RACECAR");
+yell10("racecar");
 
 function longest(a, b) {
   var longer;
@@ -35,11 +35,11 @@ console.log(longest(dogs, cats));
 
 
 function isVowel(x) {
+  var x = x.toLowerCase();
   if (x === "a" || x === "e" || x === "i" || x === "o" || x === "u" ) {
     return true;
-  } else if (x === "A" || x === "E" || x === "I" || x === "O" || x === "U" ) {
-    return true;
-  } else {
+  }
+  else {
     return false;
   }
 }
